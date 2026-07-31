@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>maxxhunter | Login</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #0d1117;
+    }
+
+    .login-panel {
+      width: 350px;
+      padding: 35px;
+      background: #161b22;
+      border: 1px solid #30363d;
+      border-radius: 10px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    }
+
+    .login-panel h1 {
+      color: #ffffff;
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 30px;
+      font-weight: bold;
+    }
+
+    .input-box {
+      margin-bottom: 18px;
+    }
+
+    .input-box label {
+      display: block;
+      color: #c9d1d9;
+      margin-bottom: 8px;
+      font-size: 14px;
+    }
+
+    .input-box input {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #30363d;
+      border-radius: 6px;
+      background: #0d1117;
+      color: white;
+      outline: none;
+    }
+
+    .input-box input:focus {
+      border-color: #58a6ff;
+    }
+
+    .login-btn {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      border-radius: 6px;
+      background: #238636;
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .login-btn:hover {
+      background: #2ea043;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="login-panel">
+
+    <h1><strong>maxxhunter</strong></h1>
+
+    <form>
+      <div class="input-box">
+        <label for="username">Username</label>
+        <input
+          type="text"
+          id="username"
+          name="username"
+          placeholder="Enter username"
+          required
+        >
+      </div>
+
+      <div class="input-box">
+        <label for="password">Password</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Enter password"
+          required
+        >
+      </div>
+
+      <button type="submit" class="login-btn">Login</button>
+    </form>
+
+  </div>
+
+</body>
+</html>
